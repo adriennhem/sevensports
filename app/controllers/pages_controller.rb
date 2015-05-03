@@ -4,7 +4,6 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
-    @pages = Page.all
   end
 
   # GET /pages/1
@@ -64,7 +63,7 @@ class PagesController < ApplicationController
   private
 
     def all_page
-      @pages = Page.all
+      @pages = Page.all.order(:number)
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_page

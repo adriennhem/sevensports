@@ -27,6 +27,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 # Website Management
 gem 'activeadmin', github: 'activeadmin'
+# WYSIWYG
+gem 'ckeditor'
+# upload images
+gem 'paperclip' 
+# Font Awesome
+gem 'font-awesome-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

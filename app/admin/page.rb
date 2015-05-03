@@ -12,6 +12,14 @@ permit_params :title, :content
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
+form :html => { :enctype => "multipart/form-data" } do |f|
+  f.inputs "Pages", :multipart => true do
+  	f.input :number
+    f.input :title
+    f.input :content, :as => :ckeditor
+    # f.input :picture, :required => false, :as => :file
+  end
+  f.actions 
+end
 
 end

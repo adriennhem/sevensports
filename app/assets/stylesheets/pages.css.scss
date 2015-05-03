@@ -2,8 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+
+$navbar-default-bg:#000;
+$navbar-border-radius:0px;
+$navbar-default-link-hover-color:#009BFF !important;
+$navbar-default-link-active-color:#009BFF !important;
+
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
+#bg-body {
+	// background:#202020;
+	background:url(bg2.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -11,19 +35,71 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-family: 'Gentium Book Basic', serif !important;
+  font-size: 18px;
 }
-.footer {
+#footer {
   position: absolute;
   bottom: 0;
-  width:1120px;
+  width:100%;
+  background:#444444;
+
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #000;
 }
+
+h1, h2, h3, h4, h5, h6, a {font-family: 'Open Sans', sans-serif;}
+
+h1 {font-size:28px}
+
+h2 {font-size:24px}
+
+h3 {font-size:20px}
+
+h4 {font-size:16px}
+
+a.big {font-size:18px} 
+
+/* Navbar
+-------------------------------------------------- */
+
+nav a {font-size:16px; color:#fff !important; font-weight:300}
+
 
 /* Custom CSS
 -------------------------------------------------- */
 
+.blue {color:#009BFF}
+
+.bg-blue {background:#009BFF}
+
+.grey {color:#444444}
+
+.bg-grey {background:#444444}
+
+.bg-white {background:#fff}
+
+.white {color:#fff}
+
+.black {color:#000}
+
+/* Margin
+-------------------------------------------------- */
+
+.margin-s {margin-top:50px}
+
+
+/* Width
+-------------------------------------------------- */
+
+.width800 {max-width:500px; margin: 0 auto}
+
+/* Links
+-------------------------------------------------- */
+
+a.blue {color:#009BFF}
+
+a {text-decoration:none !important}
