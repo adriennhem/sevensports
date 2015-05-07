@@ -32,6 +32,10 @@ gem 'ckeditor'
 gem 'paperclip' 
 # Font Awesome
 gem 'font-awesome-sass'
+# for local variables 
+gem 'figaro'
+gem 'mail_form'
+gem 'simple_form'
 
 
 gem 'sqlite3', group: :development

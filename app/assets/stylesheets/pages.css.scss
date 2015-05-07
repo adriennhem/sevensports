@@ -5,7 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 @import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic);
 
-$navbar-default-bg:#000;
+$navbar-default-bg:#303030;
 $navbar-border-radius:0px;
 $navbar-default-link-hover-color:#009BFF !important;
 $navbar-default-link-active-color:#009BFF !important;
@@ -63,6 +63,8 @@ h4 {font-size:16px}
 
 a.big {font-size:18px} 
 
+.hidden { display: none; }
+
 /* Navbar
 -------------------------------------------------- */
 
@@ -103,3 +105,6 @@ nav a {font-size:16px; color:#fff !important; font-weight:300}
 a.blue {color:#009BFF}
 
 a {text-decoration:none !important}
+
+
+.vertical {position:relative; top:50%; transform: translateY(-50%);}
